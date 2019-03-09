@@ -1,0 +1,67 @@
+h1{
+    margin: auto;
+}
+
+#logo-img{
+    position: relative;
+     vertical-align:middle;
+     top:10px;
+}
+#titulo-pagina{
+    font-family: 'Permanent Marker',
+    cursive;
+}
+#titulo-logo{
+    position: relative;
+    top: 10px;
+    font-family: 'Bree Serif',
+    serif;
+    font-size: 223%;
+}
+#parrafo-logo{
+    position: relative;
+    left: 20%;
+    top: -80%;
+    font-family: 'Pacifico',
+    cursive;
+    font-size: 100%;
+}
+
+#formulario-login{
+    position: relative;
+    top: 50px;
+}
+
+/*FORM BOX STYLES*/
+/* label color */
+.input-field label {
+    color: #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #000;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 rgb(11, 50, 223);
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 rgb(221, 13, 13);
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color:rgb(10, 209, 240);
+}
