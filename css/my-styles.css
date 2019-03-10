@@ -20,8 +20,6 @@ h1{
 }
 #parrafo-logo{
     position: relative;
-    left: 20%;
-    top: -80%;
     font-family: 'Pacifico',
     cursive;
     font-size: 100%;
@@ -29,7 +27,20 @@ h1{
 
 #formulario-login{
     position: relative;
-    top: 50px;
+    top: 20px;
+    right: 20px;
+}
+/*Elimina el margen inferior del renglon*/
+#cajas-de-acceso, #checkbox-y-boton {
+    margin-bottom: 0%;
+}
+/*Alineacion de los elementos del formulario*/
+#span-recuerdame{
+    padding-left: 25%;
+}
+/*Alineacion de los elementos del checkbox*/
+#parrafo-checkbox {
+    margin-top: 5px;
 }
 
 /*FORM BOX STYLES*/
