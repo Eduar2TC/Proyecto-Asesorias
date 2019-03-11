@@ -58,6 +58,10 @@ h1{
 #span-recuerdame{
     padding-left: 25%;
 }
+/*padding de las cajas con la parte superior del header*/
+#cajas{
+    padding-top: 20px;
+}
 /*Alineacion de los elementos del checkbox*/
 #parrafo-checkbox {
     margin-top: 5px;
