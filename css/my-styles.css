@@ -127,7 +127,30 @@ h1{
   -ms-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
-
-
-  /*Nav*/
   
+  /*Nav Menu*/
+
+  /*Sidenav fijo*/
+  #sidenav-1{
+      top: auto;
+      z-index:-1; /*Manda el elemento hacia el fondo*/
+  }
+     #navegacion-menu{
+       margin-bottom: 0%;
+   }
+  #navegacion-menu-movil{
+      margin-bottom: 0%
+  }
+
+aside .row{
+      margin-bottom: 0%
+  }
+
+  /*Elements checkbox of aside*/
+  .collapsible-body{
+      padding-left: 23% !important;
+  }
+  .collapsible-body form p{
+      margin-top: 0%;
+      margin-bottom: 0%;
+  }

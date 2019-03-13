@@ -76,7 +76,7 @@
         </div>
     </header>
     <!--Menu de navegación principal-->
-    <div class="row" id="navegacionPrincipal">
+    <div class="row" id="navegacion-menu">
         <div class="navbar">
             <nav>
     
@@ -91,39 +91,114 @@
                                 <li><a href="precios.html" class="fuente-menu">Asesorias</a></li>
                                 <li><a href="ayuda.html" class="fuente-menu">Ayuda</a></li>
                             </ul>
+                            <ul class="hide-on-small-and-down">
+                                
+                            </ul>
                         </div>
                     </div>
             </nav>
         </div>
     
         <!--Menu de navegacion Mobil -->
-        <ul class="sidenav" id="mobile-menu">
-            <li><a href="index.html" class="blue-text">Inicio</a></li>
-            <li><a href="proyectos.html" class="blue-text">Proyectos</a></li>
-            <li><a href="asesorias.html" class="blue-text">Asesorias</a></li>
-            <li><a href="ayuda.html" class="blue-text">Ayuda</a></li>
-        </ul>
-    
+        
+        <div class="row" id="navegacion-menu-movil">
+            <ul class="sidenav" id="mobile-menu">
+                <li><a href="index.html" class="blue-text">Inicio</a></li>
+                <li><a href="proyectos.html" class="blue-text">Proyectos</a></li>
+                <li><a href="asesorias.html" class="blue-text">Asesorias</a></li>
+                <li><a href="ayuda.html" class="blue-text">Ayuda</a></li>
+            </ul>
+        </div>
     </div>
+    <!--Renglon 2 columnas-->
+    <div class="row">
+        <div class="col m3 s12">
+                <aside> <!--Filter-->
+                    <div class="row">
+                        <ul id="sidenav-1" class="sidenav sidenav-fixed">
+                            <li><a class="subheader">Siempre visto excepto en movil</a>
+                            </li>
+                            <li class="no-padding">
+                                <ul class="collapsible">
+                                    <li>
+                                        <a href="#" class="collapsible-header">Proyectos <i class="material-icons">arrow_drop_down</i></a>
+                                        <div class="collapsible-body">
+                                            <form action="#!"> <!--Request filter-->
+                                                <p>
+                                                  <label>
+                                                      <input type="checkbox" name="popularidad" id="popularidad"><span>Popularidad</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                        <input type="checkbox" name="alfabetico" id="alfabetico"><span>A-Z</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="collapsible-header">Asesorias <i class="material-icons">arrow_drop_down</i></a>
+                                        <div class="collapsible-body">
+                                            <form action="#!">
+                                                <!--Request filter-->
+                                                <p>
+                                                    <label>
+                                                        <input type="checkbox" name="popularidad" id="popularidad"><span>Popularidad</span>
+                                                    </label>
+                                                </p>
+                                                <p>
+                                                    <label>
+                                                        <input type="checkbox" name="alfabetico" id="alfabetico"><span>A-Z</span>
+                                                    </label>
+                                                </p>
+                                            </form>
+                                        </div>
+                                    </li>
 
+                                </ul>
+                            </li>
 
-    <aside> <!--Filter-->
+                            <!--Add more lines filter-->
 
-    </aside>
-    <section> <!--Users rank section-->
-
-    </section>
+                        </ul>
+                    </div>
+                </aside>
+        </div>
+        <div class="col m9 s12">
+            <section> <!--Users and Proyects rank section-->
+                <main>
+                    <div class="row">
+                        <div class="col m4 s12">Elements tarjets</div>
+                        <div class="col m4 s12">Elements tarjets</div>
+                        <div class="col m4 s12">Elements tarjets</div>
+                    </div>
+                </main>
+            </section>
+        </div>
+    </div>
     
 </body>
 <script src="js/materialize.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
-    /*Corrige el error de sidenav*/
-    var elem = document.querySelector('.sidenav');
-    var instance = new M.Sidenav(elem);
+    document.addEventListener('DOMContentLoaded', function () {
 
+        /*Corrige el error de sidenav*/
+        var elem = document.querySelector('.sidenav');
+        var instance = new M.Sidenav(elem);
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+
+    });
     $("document").ready(function(){
-        $('.sidenav').sidenav();
+
+     /*   $('.sidenav').sidenav();
+        $('#sidenav-1').sidenav({ edge: 'left' });
+
+
+        //init collapsible
+        $('.collapsible').collapsible();*/
     });
 
 </script>
