@@ -132,7 +132,7 @@ h1{
 
   /*Sidenav fijo*/
   #sidenav-1{
-      top: auto;
+      top: 215px;
       z-index:-1; /*Manda el elemento hacia el fondo*/
   }
      #navegacion-menu{

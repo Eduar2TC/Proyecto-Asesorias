@@ -42,11 +42,11 @@
             <!--Form login-->
             <div class="col m4 hide-on-med-and-down">
                     <div class="row delete-margin-row-botton">
-                        <form class="col s12">
+                        <form class="col s12" action="server/login.php" method="POST">
                             <div class="row delete-margin-row-botton" id="cajas">
                                 <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input type="email" name="usuario" class="validate" placeholder="caca@gmail.com" id="email">
+                                    <input type="email" name="usuario" class="validate" placeholder="mail@gmail.com" id="email">
                                     <label for="user">Usuario</label>
                                 </div>
                                 <div class="input-field col s6">
@@ -113,10 +113,10 @@
     <!--Renglon 2 columnas-->
     <div class="row">
         <div class="col m3 s12">
-                <aside> <!--Filter-->
+                <aside id="filtro"> <!--Filter-->
                     <div class="row">
                         <ul id="sidenav-1" class="sidenav sidenav-fixed">
-                            <li><a class="subheader">Siempre visto excepto en movil</a>
+                            <li><a class="subheader center">Filtrar Proyectos</a>
                             </li>
                             <li class="no-padding">
                                 <ul class="collapsible">
@@ -169,9 +169,7 @@
             <section> <!--Users and Proyects rank section-->
                 <main>
                     <div class="row">
-                        <div class="col m4 s12">Elements tarjets</div>
-                        <div class="col m4 s12">Elements tarjets</div>
-                        <div class="col m4 s12">Elements tarjets</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus facere ad tempore blanditiis. Modi, totam voluptatibus non deleniti quas enim ipsa sit illum nulla repudiandae praesentium, assumenda omnis voluptate?
                     </div>
                 </main>
             </section>
