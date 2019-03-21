@@ -130,10 +130,18 @@ h1{
   
   /*Nav Menu*/
 
+  /*Renglon padre del sidenav y el contenido principal*/
+  #parent-row{
+      position: relative;
+  }
   /*Sidenav fijo*/
   #sidenav-1{
-      top: 215px;
-      z-index:-1; /*Manda el elemento hacia el fondo*/
+      /*top: 215px;*/
+      top: auto;
+      z-index:1; /*Manda el elemento hacia el fondo*/
+      position: absolute;
+      height: 100%;
+      
   }
      #navegacion-menu{
        margin-bottom: 0%;
@@ -143,7 +151,7 @@ h1{
   }
 
 aside .row{
-      margin-bottom: 0%
+      margin-bottom: 0%;
   }
 
   /*Elements checkbox of aside*/
