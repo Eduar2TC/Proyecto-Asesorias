@@ -1,3 +1,4 @@
+/*Inicio: Archivo index.php*/
 /*Propieddades del Contenedor*/
 #contenedor.container {
   margin: 0 auto;
@@ -139,12 +140,11 @@ h1{
   /*Sidenav fijo*/
   #sidenav-1{
       /*top: 215px;*/
-      top: auto;
-      bottom: auto;
       /*z-index: 1; Manda el elemento hacia el fondo*/
       position: absolute;
-      height: 83.5%;
+      height: 83.80%;
       width: 24%;
+
   }
   #navegacion-menu{
        margin-bottom: 0%;
@@ -166,12 +166,24 @@ aside .row{
       margin-bottom: 0%;
   }
 
-  main .row{
+  /*Contenido principal*/
+  #main-index .row{
       overflow-y: auto;
+  }
+  /*Tamaño de los titulos principales de la página inicial*/
+  #main-index h1{
+      font-weight: bold;
+      color: rgb(54, 54, 54);
+      font-size: 35px;
+  }
+
+  /*Cambia erl height de las cajas de texto*/
+  .section-cajas .caja{
+    height: 200px;
   }
 
 
-
+/*Tarjetas*/
   .card {
   background-color: #f4f4f4;
   width: 300px;
@@ -237,3 +249,5 @@ aside .row{
   font-size: 2em;
   color: #3F51B5;
 }
+
+/*Fin Archivo index.php*/

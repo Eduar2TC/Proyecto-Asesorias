@@ -1,5 +1,5 @@
 <?php
-//title page
+//title
 $tituloPagina = "Asesosrias - Principal";
 require_once("includes/header.php");
 ?>
@@ -77,9 +77,10 @@ require_once("includes/header.php");
 
                             <a href="index.php" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="hide-on-small-and-down">
+                                <li><a href="index.php" class="fuente-menu">Inicio</a></li>
                                 <li><a href="proyectos.php" class="fuente-menu">Proyectos</a></li>
-                                <li><a href="precios.php" class="fuente-menu">Asesorias</a></li>
-                                <li><a href="registro.php" class="fuente-menu">Registro</a></li>
+                                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
+                                </li>
                                 <li><a href="ayuda.php" class="fuente-menu">Ayuda</a></li>
                             </ul>
                             <ul class="hide-on-small-and-down">
@@ -95,9 +96,8 @@ require_once("includes/header.php");
         <div class="row" id="navegacion-menu-movil">
             <ul class="sidenav" id="mobile-menu">
                 <li><a href="index.php" class="blue-text">Inicio</a></li>
-                <li><a href="proyectos.php" class="blue-text">Proyectos</a></li>
-                <li><a href="asesorias.php" class="blue-text">Asesorias</a></li>
-                <li><a href="registro.php" class="blue-text">Registro</a></li>
+                <li><a href="registro.php" class="blue-text">Proyectos</a></li>
+                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
                 <li><a href="ayuda.php" class="blue-text">Ayuda</a></li>
             </ul>
         </div>
@@ -164,14 +164,48 @@ require_once("includes/header.php");
         <div class="col m9 s12">
             <section>
                 <!--Users and Proyects rank section-->
-                <main>
-                    <!--Titulo principal-->
-                    <div class="row center">
-                        <div class="col s12">
-                            <div class="grey-text text-darken-4">
-                                <h1>Usuarios mejores ranqueados</h1>
+                <main id="main-index">
+
+                    <div class="section-introduccion-texto">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="grey-text text-darken-4">
+                                    <!--Titulos principales-->
+                                    <h1>Recupera tu inversión</h1>
+                                </div>
+                                <p>La mejor forma de recupera la inversión de los gastos hechos en Proyectos hechos y que después se vuelven inútiles al terminar el curso.</p>
+                                <p> <a href="registro.php">Registrate</a> y empieza a subir tus proyectos.</p>
                             </div>
-                            <span>Usuarios con los proyectos estudiantiles mejores rankeados en todas las categorías</span>
+                            <div class="col s12">
+                                <div class="grey-text text-darken-4">
+                                    <h1>Caracteristicas</h1>
+                                </div>
+                                <p>Puedes buscar y filtrar los datos de búsqueda para poder encontrar el proyecto que mas se acomode a tus necesidades.
+                                    Califica a los usuarios, ponte en contacto con los autores de los proyectos para poder saber mas de los detalles del Proyecto de interés para tus cursos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-cajas center">
+                        <div class="row">
+                            <div class="col s12 m6 l3 blue white-text caja">
+                                <h5>¡Hooo si!</h5>
+                                <p>Aprueba tu curso con estas gran idea</p>
+                            </div>
+                            <div class="col s12 m6 l3 purple white-text caja">
+                                <h5>Vende tus proyectos</h5>
+                                <p>¿Piensas que tu dinero se há perdido? Que esperas vender tus proyectos. </p>
+                            </div>
+                            <div class="col s12 m6 l3 teal white-text caja">
+                                <h5>Asesorias Personalizadas</h5>
+                                <p>Tengo dugas ¿Que hago?</p>
+                                <p>Contacta y programa la cita con los autores para resolver tus dudas.</p>
+                            </div>
+                            <div class="col s12 m6 l3 orange white-text caja">
+                                <h5>Facilidades de pago</h5>
+                                <p>Opciones a comveniencia, Oxxo, Paypal</p>
+                                <p>Si lo deseas contacta al autor para poder acordar la forma de pago.</p>
+                            </div>
                         </div>
                     </div>
                     <!--Renglond e targetas-->
@@ -236,6 +270,7 @@ require_once("includes/header.php");
                             </div>
                         </div>
                         <div class="row">
+                            <!--dog tarjet -->
                             <div class="col s12 m4">
                                 <div class="card">
                                     <div class="card-header">
@@ -261,8 +296,59 @@ require_once("includes/header.php");
                                     </div>
                                 </div>
                             </div>
-                            <div class="col s12 m4"></div>
-                            <div class="col s12 m4"></div>
+                            <!--dog tarjet -->
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h3>Frank the Pug</h3>
+                                        <h4>The sexiest "Men (dog) in Black" </h4>
+                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-codepen"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-github"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--dog tarjet -->
+                            <div class="col s12 m4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
+                                    </div>
+                                    <div class="card-content">
+                                        <h3>Frank the Pug</h3>
+                                        <h4>The sexiest "Men (dog) in Black" </h4>
+                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-codepen"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-github"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 

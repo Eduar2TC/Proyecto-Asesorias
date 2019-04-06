@@ -8,17 +8,29 @@
         var instance = new M.Sidenav(elem);
         var elems = document.querySelectorAll('.collapsible');
         var instances = M.Collapsible.init(elems);
+        $(".collapsible-header").click(function(e) {
+            e.preventDefault();
+        });
+
 
     });
-    $("document").ready(function() {
+    $('document').ready(function() {
+        /*  Aqui inicializar los elemetos jquery u funciones cuando la página esté cargada*/
 
-        /*   $('.sidenav').sidenav();
-           $('#sidenav-1').sidenav({ edge: 'left' });
-
-
-           //init collapsible
-           $('.collapsible').collapsible();*/
-
+        //Cambia el tmaño dinamicamente del sidenav al tamaño visible del contenido principal al hacer Scroll
+        $(window).on('scroll', function() {
+            var $el = $('#main-index'),
+                scrollTop = $(this).scrollTop(),
+                scrollBot = scrollTop + $(this).height(),
+                elTop = $el.offset().top,
+                elBottom = elTop + $el.outerHeight(),
+                visibleTop = elTop < scrollTop ? scrollTop : elTop,
+                visibleBottom = elBottom > scrollBot ? scrollBot : elBottom;
+            //Envia el tamaño obtenido al sidenav
+            $('#sidenav-1').stop().animate({
+                height: visibleBottom - visibleTop
+            }, 200);
+        });
 
 
     });
@@ -26,28 +38,11 @@
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.pushpin');
         var instances = M.Pushpin.init(elems, {
-            top: 285,
+            top: 210,
             bottom: 10000, // --Final
             offset: 0
         });
-
-
-        $.mobile.panel.prototype._positionPanel = function() {
-            var self = this,
-                panelInnerHeight = self._panelInner.outerHeight(),
-                expand = panelInnerHeight > $.mobile.getScreenHeight();
-
-            if (expand || !self.options.positionFixed) {
-                if (expand) {
-                    self._unfixPanel();
-                    $.mobile.resetActivePageHeight(panelInnerHeight);
-                }
-                //window.scrollTo( 0, $.mobile.defaultHomeScroll );
-            } else {
-                self._fixPanel();
-            }
-        };
     });
 </script>
 
-</html> 
+</html>
