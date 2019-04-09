@@ -19,7 +19,7 @@
 
         //Cambia el tmaño dinamicamente del sidenav al tamaño visible del contenido principal al hacer Scroll
         $(window).on('scroll', function() {
-            var $el = $('#main-index'),
+            var $el = $('#main-proyects'),
                 scrollTop = $(this).scrollTop(),
                 scrollBot = scrollTop + $(this).height(),
                 elTop = $el.offset().top,
@@ -34,14 +34,18 @@
 
 
     });
-    //Puspin elements on aside and navbar
+
     document.addEventListener('DOMContentLoaded', function() {
+        //Puspin elements on aside and navbar
         var elems = document.querySelectorAll('.pushpin');
         var instances = M.Pushpin.init(elems, {
             top: 210,
             bottom: 10000, // --Final
             offset: 0
         });
+        //Scrollspy del menu lateral
+        var scrollspy = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(scrollspy);
     });
 </script>
 

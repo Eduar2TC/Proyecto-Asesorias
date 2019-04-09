@@ -128,8 +128,13 @@ h1{
   -ms-transform-origin: 100% 100%;
   -o-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
+  /*Fin del HEADER*/
   
-  /*Nav Menu*/
+  /*Inicio de Navegacion Menu*/
+  #boton-registro:hover{
+    color:#e3f2fd;
+  }
+  /*Fin de Navegación Menu*/
 
   /*Renglon padre del sidenav y el contenido principal*/
   #parent-row{
@@ -137,14 +142,18 @@ h1{
       min-height: 600px;
       margin-bottom: 0%;
   }
+  /*Inicio Sidenav*/
   /*Sidenav fijo*/
-  #sidenav-1{
+  #sidenav-1, #navegation-scroll{
       /*top: 215px;*/
       /*z-index: 1; Manda el elemento hacia el fondo*/
       position: absolute;
       height: 83.80%;
       width: 24%;
 
+  }
+  .table-of-contents a{
+    font-size: 26px;
   }
   #navegacion-menu{
        margin-bottom: 0%;
@@ -165,8 +174,10 @@ aside .row{
       margin-top: 0%;
       margin-bottom: 0%;
   }
+  /*Fin del Sidenav*/
 
-  /*Contenido principal*/
+  
+  /*Inicio Contenido principal*/
   #main-index .row{
       overflow-y: auto;
   }
@@ -249,5 +260,5 @@ aside .row{
   font-size: 2em;
   color: #3F51B5;
 }
-
+/*Fin del Contenido Principal*/
 /*Fin Archivo index.php*/

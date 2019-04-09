@@ -79,7 +79,7 @@ require_once("includes/header.php");
                             <ul class="hide-on-small-and-down">
                                 <li><a href="index.php" class="fuente-menu">Inicio</a></li>
                                 <li><a href="proyectos.php" class="fuente-menu">Proyectos</a></li>
-                                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
+                                <li><a href="registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span id="boton-registro">Registrarse</span></a>
                                 </li>
                                 <li><a href="ayuda.php" class="fuente-menu">Ayuda</a></li>
                             </ul>
@@ -104,60 +104,22 @@ require_once("includes/header.php");
     </div>
     <!--Renglon 2 columnas aside y contenido principal-->
     <div class="row" id="parent-row">
+        <!--Menu navegacion lateral -->
         <div class="col m3 s12">
-            <aside id="filtro">
-                <!--Filter-->
+            <aside>
                 <div class="row">
-                    <ul id="sidenav-1" class="sidenav sidenav-fixed pushpin">
-                        <li><a class="subheader center">Filtrar Proyectos
-                                <div id="notification"></div>
-                            </a>
-                        </li>
-                        <li class="no-padding">
-                            <ul class="collapsible">
-                                <li>
-                                    <a href="#" class="collapsible-header">Proyectos <i class="material-icons">arrow_drop_down</i></a>
-                                    <div class="collapsible-body">
-                                        <form action="#!">
-                                            <!--Request filter-->
-                                            <p>
-                                                <label>
-                                                    <input type="checkbox" name="popularidad" id="proyecto-popular"><span>Popularidad</span>
-                                                </label>
-                                            </p>
-                                            <p>
-                                                <label>
-                                                    <input type="checkbox" name="alfabetico" id="proyecto-alfabetico"><span>A-Z</span>
-                                                </label>
-                                            </p>
-                                        </form>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#" class="collapsible-header">Asesorias <i class="material-icons">arrow_drop_down</i></a>
-                                    <div class="collapsible-body">
-                                        <form action="#!">
-                                            <!--Request filter-->
-                                            <p>
-                                                <label>
-                                                    <input type="checkbox" name="popularidad" id="asesoria-popular"><span>Popularidad</span>
-                                                </label>
-                                            </p>
-                                            <p>
-                                                <label>
-                                                    <input type="checkbox" name="alfabetico" id="asesoria-alfabetico"><span>A-Z</span>
-                                                </label>
-                                            </p>
-                                        </form>
-                                    </div>
-                                </li>
+                    <!--Pushpin section-->
+                    <div id="navegation-scroll" class="pushpin">
 
+                        <div class="col hide-on-small-only m6 l6">
+                            <ul class="section table-of-contents right-align">
+                                <li class="left-align"><a href="#inversion">Inversion</a></li>
+                                <li class="left-align"><a href="#caracteristicas">Caracteristicas</a></li>
+                                <li class="left-align"><a href="#cajas-texto">Facilidades</a></li>
+                                <li class="left-align"><a href="#acompaniamiento">Acompañamiento</a></li>
                             </ul>
-                        </li>
-
-                        <!--Add more lines filter-->
-
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
@@ -168,7 +130,7 @@ require_once("includes/header.php");
 
                     <div class="section-introduccion-texto">
                         <div class="row">
-                            <div class="col s12">
+                            <div class="col s12 scrollspy" id="inversion">
                                 <div class="grey-text text-darken-4">
                                     <!--Titulos principales-->
                                     <h1>Recupera tu inversión</h1>
@@ -176,7 +138,7 @@ require_once("includes/header.php");
                                 <p>La mejor forma de recupera la inversión de los gastos hechos en Proyectos hechos y que después se vuelven inútiles al terminar el curso.</p>
                                 <p> <a href="registro.php">Registrate</a> y empieza a subir tus proyectos.</p>
                             </div>
-                            <div class="col s12">
+                            <div class="col s12 scrollspy" id="caracteristicas">
                                 <div class="grey-text text-darken-4">
                                     <h1>Caracteristicas</h1>
                                 </div>
@@ -186,7 +148,7 @@ require_once("includes/header.php");
                             </div>
                         </div>
                     </div>
-                    <div class="section-cajas center">
+                    <div class="section-cajas scrollspy center" id="cajas-texto">
                         <div class="row">
                             <div class="col s12 m6 l3 blue white-text caja">
                                 <h5>¡Hooo si!</h5>
@@ -208,150 +170,12 @@ require_once("includes/header.php");
                             </div>
                         </div>
                     </div>
-                    <!--Renglond e targetas-->
-                    <div class="row" id="principal-content">
-                        <div class="row">
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img src="" alt="" class="activator" />
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
-                                        <p><a href="#">This is a link</a></p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img src="" alt="" class="activator" />
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
-                                        <p><a href="#">This is a link</a></p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img src="" alt="" class="activator" />
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
-                                        <p><a href="#">This is a link</a></p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="section-acompaniamiento scrollspy" id="acompaniamiento">
+                        <div class="grey-text text-darken-4">
+                            <h1>Acompañamiento</h1>
                         </div>
-                        <div class="row">
-                            <!--dog tarjet -->
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3>Frank the Pug</h3>
-                                        <h4>The sexiest "Men (dog) in Black" </h4>
-                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-codepen"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-github"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--dog tarjet -->
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3>Frank the Pug</h3>
-                                        <h4>The sexiest "Men (dog) in Black" </h4>
-                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-codepen"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-github"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--dog tarjet -->
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3>Frank the Pug</h3>
-                                        <h4>The sexiest "Men (dog) in Black" </h4>
-                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-codepen"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-github"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequatur reprehenderit, ratione veritatis a iste sit dolore numquam est sint architecto, facilis vel tempora itaque eos recusandae eius ea nulla!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>                
                 </main>
             </section>
         </div>
