@@ -47,7 +47,10 @@ require_once("includes/header.php");
                             </div>
                         </div>
                         <div class="row delete-margin-row-botton">
-                            <div class="col s3 offset-s5">
+                            <div class="col s5 m6 l5 offset-m1 offset-l1" id="contrasenia-olvidada">
+                                <p class="margin right-align medium-small valign-wrapper"><a href="#">¿Contraseña olvidada?</a></p>
+                            </div>
+                            <div class="col s3 m3 l3 offset-m4">
                                 <p id="parrafo-checkbox">
                                     <label>
                                         <input type="checkbox" class="blue" id="recuerdame" />
@@ -55,7 +58,7 @@ require_once("includes/header.php");
                                     </label>
                                 </p>
                             </div>
-                            <div class="col s4 offset-2" id="button-access">
+                            <div class="col s4 m3 l3 offset-s2" id="button-access">
                                 <button class="btn waves-effect waves-light btn-small blue right" type="submit" name="action">Acceder
                                     <i class="fas fa-sign-in-alt"></i>
                                 </button>
@@ -79,7 +82,7 @@ require_once("includes/header.php");
                             <ul class="hide-on-small-and-down">
                                 <li><a href="index.php" class="fuente-menu">Inicio</a></li>
                                 <li><a href="proyectos.php" class="fuente-menu">Proyectos</a></li>
-                                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
+                                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span id="boton-registro">Registrarse</span></a>
                                 </li>
                                 <li><a href="ayuda.php" class="fuente-menu">Ayuda</a></li>
                             </ul>
@@ -122,12 +125,12 @@ require_once("includes/header.php");
                                             <!--Request filter-->
                                             <p>
                                                 <label>
-                                                    <input type="checkbox" name="popularidad" id="proyecto-popular"><span>Popularidad</span>
+                                                    <input type="checkbox" class="blue" name="popularidad" id="proyecto-popular"><span>Popularidad</span>
                                                 </label>
                                             </p>
                                             <p>
                                                 <label>
-                                                    <input type="checkbox" name="alfabetico" id="proyecto-alfabetico"><span>A-Z</span>
+                                                    <input type="checkbox" class="blue" name="alfabetico" id="proyecto-alfabetico"><span>A-Z</span>
                                                 </label>
                                             </p>
                                         </form>
@@ -140,12 +143,12 @@ require_once("includes/header.php");
                                             <!--Request filter-->
                                             <p>
                                                 <label>
-                                                    <input type="checkbox" name="popularidad" id="asesoria-popular"><span>Popularidad</span>
+                                                    <input type="checkbox" class="blue" name="popularidad" id="asesoria-popular"><span>Popularidad</span>
                                                 </label>
                                             </p>
                                             <p>
                                                 <label>
-                                                    <input type="checkbox" name="alfabetico" id="asesoria-alfabetico"><span>A-Z</span>
+                                                    <input type="checkbox" class="blue"  name="alfabetico" id="asesoria-alfabetico"><span>A-Z</span>
                                                 </label>
                                             </p>
                                         </form>

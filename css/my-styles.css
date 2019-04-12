@@ -18,7 +18,10 @@
 }
 
 /*Propiedades del Header*/
-
+/*Hover sobre el titulo principal*/
+#titulo-pagina:hover{
+  color:rgb(23, 110, 197);
+}
 h1{
     margin: auto;
 }
@@ -56,6 +59,17 @@ h1{
     margin-bottom: 0%;
 }
 /*Alineacion de los elementos del formulario*/
+/*Texto contraseña olvidada*/
+#contrasenia-olvidada{
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+#contrasenia-olvidada p{
+  margin-top:3%;
+}
+#contrasenia-olvidada a:hover{
+  text-decoration: underline;
+}
 #span-recuerdame{
     padding-left: 25%;
 }
@@ -79,6 +93,16 @@ h1{
     color: rgb(56, 54, 54);
 }
 
+/* label underline focus color */
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid rgb(54, 56, 77) !important;
+    box-shadow: 0 1px 0 0 rgb(44, 38, 122) !important;
+}
+/* valid color */
+.input-field input[type=password].valid {
+    border-bottom: 1px solid rgb(16, 57, 168) !important;
+    box-shadow: 0 1px 0 0 rgb(30, 17, 212) !important;
+}
 /* label focus color */
 .input-field input[type=password]:focus+label {
     color:rgb(47, 50, 255) !important;
@@ -86,20 +110,20 @@ h1{
 
 /* label underline focus color */
 .input-field input[type=email]:focus {
-    border-bottom: 1px solid rgb(21, 255, 0) !important;
-    box-shadow: 0 1px 0 0 rgb(17, 212, 49) !important;
+    border-bottom: 1px solid rgb(54, 56, 77) !important;
+    box-shadow: 0 1px 0 0 rgb(44, 38, 122) !important;
 }
 
 /* valid color */
 .input-field input[type=email].valid {
-    border-bottom: 1px solid rgb(16, 57, 168);
-    box-shadow: 0 1px 0 0 rgb(4, 183, 238) !important;
+    border-bottom: 1px solid rgb(16, 57, 168) !important;
+    box-shadow: 0 1px 0 0 rgb(4, 66, 238) !important;
 }
 
 /* invalid color */
 .input-field input[type=text].invalid {
-    border-bottom: 1px solid rgb(60, 196, 6);
-    box-shadow: 0 1px 0 0 rgb(13, 221, 152);
+    border-bottom: 1px solid rgb(196, 19, 6);
+    box-shadow: 0 1px 0 0 rgb(221, 27, 13);
 }
 
 /* icon prefix focus color */
@@ -152,8 +176,11 @@ h1{
       width: 24%;
 
   }
+  /*Tamaño de los titulos del Scrollspy*/
   .table-of-contents a{
-    font-size: 26px;
+    margin-left: 30px;
+    margin-right: 0px;
+    font-size: 20px;
   }
   #navegacion-menu{
        margin-bottom: 0%;

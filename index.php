@@ -47,7 +47,10 @@ require_once("includes/header.php");
                             </div>
                         </div>
                         <div class="row delete-margin-row-botton">
-                            <div class="col s3 offset-s5">
+                            <div class="col s5 m6 l5 offset-m1 offset-l1" id="contrasenia-olvidada">
+                                <p class="margin right-align medium-small valign-wrapper"><a href="#">¿Contraseña olvidada?</a></p>
+                            </div>
+                            <div class="col s3 m3 l3 offset-m4">
                                 <p id="parrafo-checkbox">
                                     <label>
                                         <input type="checkbox" class="blue" id="recuerdame" />
@@ -55,7 +58,7 @@ require_once("includes/header.php");
                                     </label>
                                 </p>
                             </div>
-                            <div class="col s4 offset-2" id="button-access">
+                            <div class="col s4 m3 l3 offset-s2" id="button-access">
                                 <button class="btn waves-effect waves-light btn-small blue right" type="submit" name="action">Acceder
                                     <i class="fas fa-sign-in-alt"></i>
                                 </button>
@@ -117,6 +120,9 @@ require_once("includes/header.php");
                                 <li class="left-align"><a href="#caracteristicas">Caracteristicas</a></li>
                                 <li class="left-align"><a href="#cajas-texto">Facilidades</a></li>
                                 <li class="left-align"><a href="#acompaniamiento">Acompañamiento</a></li>
+                                <li class="left-align"><a href="#mision">Visión</a></li>
+                                <li class="left-align"><a href="#vision">Misión</a></li>
+                                <li class="left-align"><a href="#acerca-de">Acerca de</a></li>
                             </ul>
                         </div>
                     </div>
@@ -175,7 +181,29 @@ require_once("includes/header.php");
                             <h1>Acompañamiento</h1>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequatur reprehenderit, ratione veritatis a iste sit dolore numquam est sint architecto, facilis vel tempora itaque eos recusandae eius ea nulla!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>                
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>
+                    </div>
+                    <div class="section-acompaniamiento scrollspy" id="mision">
+                        <div class="grey-text text-darken-4">
+                            <h1>Visión</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequatur reprehenderit, ratione veritatis a iste sit dolore numquam est sint architecto, facilis vel tempora itaque eos recusandae eius ea nulla!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>
+                    </div>
+                    <div class="section-acompaniamiento scrollspy" id="vision">
+                        <div class="grey-text text-darken-4">
+                            <h1>Misión</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequatur reprehenderit, ratione veritatis a iste sit dolore numquam est sint architecto, facilis vel tempora itaque eos recusandae eius ea nulla!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>
+                    </div>
+                    <div class="section-acompaniamiento scrollspy" id="acerca-de">
+                        <div class="grey-text text-darken-4">
+                            <h1>Acerda de</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequatur reprehenderit, ratione veritatis a iste sit dolore numquam est sint architecto, facilis vel tempora itaque eos recusandae eius ea nulla!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>
+                    </div>
                 </main>
             </section>
         </div>
