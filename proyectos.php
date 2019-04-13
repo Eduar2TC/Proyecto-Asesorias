@@ -148,7 +148,7 @@ require_once("includes/header.php");
                                             </p>
                                             <p>
                                                 <label>
-                                                    <input type="checkbox" class="blue"  name="alfabetico" id="asesoria-alfabetico"><span>A-Z</span>
+                                                    <input type="checkbox" class="blue" name="alfabetico" id="asesoria-alfabetico"><span>A-Z</span>
                                                 </label>
                                             </p>
                                         </form>
@@ -173,144 +173,51 @@ require_once("includes/header.php");
                         <div class="row">
                             <div class="col s12 m4">
                                 <div class="card">
+                                    <div class="card-header">
+                                        <img src="img/proyecto01.png" alt="">
+                                    </div>
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img src="" alt="" class="activator" />
                                     </div>
                                     <div class="card-content">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
-                                        <p><a href="#">This is a link</a></p>
+                                        <h3 id="nombre-proyecto">Nombre del proyecto</h3>
+                                        <div class="elemento">
+                                            <h4>Categoria: </h4><span id="categoria">
+                                                Hardware
+                                            </span>
+                                        </div>
+                                        <div class="elemento">
+                                            <h4>Autor: </h4><span id="autor">
+                                                Jose Lopez
+                                            </span>
+                                        </div>
+                                        <div class="elemento">
+                                            <h4>Costo: </h4><span id="costo">
+                                                $1,500.50
+                                            </span>
+                                        </div>
+                                        <div class="elemento">
+                                            <h4>Puntuacion: </h4><span id="puntuacion">
+                                                5 stars
+                                            </span>
+                                        </div>
+                                        <span class="card-title activator">
+                                            <i class="material-icons right">more_vert
+                                            </i>
+                                        </span>
+                                        <p><a href="#">Detalles del proyecto</a></p>
                                     </div>
                                     <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                        <a href="#">This is a link</a>
+                                        <a href="#">Comprar</a>
+                                        <a href="#">Pedir información</a>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img src="" alt="" class="activator" />
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
-                                        <p><a href="#">This is a link</a></p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img src="" alt="" class="activator" />
-                                    </div>
-                                    <div class="card-content">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">more_vert</i></span>
-                                        <p><a href="#">This is a link</a></p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">This is a link</a>
-                                        <a href="#">This is a link</a>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title activator">Card Title<i class="material-icons right">close</i></span>
-                                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        <span class="card-title activator">Descripción del proyecto<i class="material-icons right">close</i></span>
+                                        <p>blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <!--dog tarjet -->
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3>Frank the Pug</h3>
-                                        <h4>The sexiest "Men (dog) in Black" </h4>
-                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-codepen"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-github"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--dog tarjet -->
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3>Frank the Pug</h3>
-                                        <h4>The sexiest "Men (dog) in Black" </h4>
-                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-codepen"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-github"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--dog tarjet -->
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3>Frank the Pug</h3>
-                                        <h4>The sexiest "Men (dog) in Black" </h4>
-                                        <p>And now you're back from outer space, / I just walked in to find you here with that sad look upon your face, / I should've changed that stupid lock, I should have made you leave your key, / If I'd have known for just one second you'd be back to bother me. / Go on, now go! Walk out the door...</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="fa fa-codepen"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-stack-overflow"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="fa fa-github"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
 
                 </main>
             </section>

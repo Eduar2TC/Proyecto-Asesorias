@@ -241,7 +241,8 @@ aside .row{
 
 .card-content {
   width: 85%;
-  margin: 35px auto;
+  margin: 5px auto;
+  padding: 5px !important;
 }
 
 .card-content h3 {
@@ -261,8 +262,17 @@ aside .row{
 .card-content p {
   color: #727272;
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: 'Open Sans', sans-serif; 
+}
+.card-content #nombre-proyecto{
+  margin: 0%;
+}
+.elemento > h4, span{
+  display: inline;
+}
+
+.card-action a{
+  font-size: 12px;
 }
 
 .card-footer {
