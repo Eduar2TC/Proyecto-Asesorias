@@ -105,10 +105,10 @@ require_once("includes/header.php");
             </ul>
         </div>
     </div>
-    <!--Renglon 2 columnas aside y contenido principal-->
+    <!--Renglon 2 columnas sidenav y contenido principal-->
     <div class="row" id="parent-row">
-        <!--Menu navegacion lateral -->
-        <div class="col m3 s12">
+        <!--Seccion de Menu navegacion lateral -->
+        <section class="col m3 s12">
             <aside>
                 <div class="row">
                     <!--Pushpin section-->
@@ -128,8 +128,9 @@ require_once("includes/header.php");
                     </div>
                 </div>
             </aside>
-        </div>
-        <div class="col m9 s12">
+        </section>
+        <!--Seccion del Contenido Principal-->
+        <section class="col m9 s12">
             <section>
                 <!--Users and Proyects rank section-->
                 <main id="main-index">
@@ -206,7 +207,7 @@ require_once("includes/header.php");
                     </div>
                 </main>
             </section>
-        </div>
+        </section>
     </div>
     <!--Renglon Footer-->
     <footer class="page-footer red darken-4 valign-wrapper center">

@@ -105,17 +105,15 @@ require_once("includes/header.php");
             </ul>
         </div>
     </div>
-    <!--Renglon 2 columnas aside y contenido principal-->
+    <!--Renglon 2 columnas sidenav y contenido principal-->
     <div class="row" id="parent-row">
-        <div class="col m3 s12">
+        <!--Seccion Sidenav-->
+        <section class="col m3 s12">
             <aside id="filtro">
                 <!--Filter-->
                 <div class="row">
                     <ul id="sidenav-1" class="sidenav sidenav-fixed pushpin">
-                        <li><a class="subheader center">Filtrar Proyectos
-                                <div id="notification"></div>
-                            </a>
-                        </li>
+                        <li><a class="subheader center">Filtrar Proyectos</a></li>
                         <li class="no-padding">
                             <ul class="collapsible">
                                 <li>
@@ -154,74 +152,166 @@ require_once("includes/header.php");
                                         </form>
                                     </div>
                                 </li>
-
                             </ul>
                         </li>
 
                         <!--Add more lines filter-->
-
                     </ul>
                 </div>
             </aside>
-        </div>
-        <div class="col m9 s12">
-            <section>
-                <!--Users and Proyects rank section-->
-                <main id="main-proyects">
-                    <!--Renglond e targetas-->
-                    <div class="row" id="principal-content">
-                        <div class="row">
-                            <div class="col s12 m4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="img/proyecto01.png" alt="">
-                                    </div>
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img src="" alt="" class="activator" />
-                                    </div>
-                                    <div class="card-content">
-                                        <h3 id="nombre-proyecto">Nombre del proyecto</h3>
-                                        <div class="elemento">
-                                            <h4>Categoria: </h4><span id="categoria">
-                                                Hardware
-                                            </span>
-                                        </div>
-                                        <div class="elemento">
-                                            <h4>Autor: </h4><span id="autor">
-                                                Jose Lopez
-                                            </span>
-                                        </div>
-                                        <div class="elemento">
-                                            <h4>Costo: </h4><span id="costo">
-                                                $1,500.50
-                                            </span>
-                                        </div>
-                                        <div class="elemento">
-                                            <h4>Puntuacion: </h4><span id="puntuacion">
-                                                5 stars
-                                            </span>
-                                        </div>
-                                        <span class="card-title activator">
-                                            <i class="material-icons right">more_vert
-                                            </i>
-                                        </span>
-                                        <p><a href="#">Detalles del proyecto</a></p>
-                                    </div>
-                                    <div class="card-action">
-                                        <a href="#">Comprar</a>
-                                        <a href="#">Pedir información</a>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title activator">Descripción del proyecto<i class="material-icons right">close</i></span>
-                                        <p>blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla </p>
-                                    </div>
+        </section>
+        <!--Seccion Contenido principal-->
+        <section class="col m9 s12">
+            <!--Users and Proyects rank section-->
+            <main class="row" id="main-proyects">
+                <!--Titulo-->
+                <div class="row titulo">
+                    <div class="col s12 blue accent-3">
+                        <div class="center-align">
+                            <h4 class="white-text darken-2">Proyectos</h4>
+                        </div>
+                    </div>
+                </div>
+                <!--Renglond de 3 targetas-->
+                <div class="row">
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="img/proyecto01.png" alt="">
+                            </div>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="" alt="" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <h3 id="nombre-proyecto">Nombre del proyecto</h3>
+                                <div class="elemento">
+                                    <h4>Categoria: </h4><span id="categoria">
+                                        Hardware
+                                    </span>
                                 </div>
+                                <div class="elemento">
+                                    <h4>Autor: </h4><span id="autor">
+                                        Jose Lopez
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Costo: </h4><span id="costo">
+                                        $1,500.50
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Puntuacion: </h4><span id="puntuacion">
+                                        5 stars
+                                    </span>
+                                </div>
+                                <span class="card-title activator">
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p><a href="#">Detalles del proyecto</a></p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Comprar</a>
+                                <a href="#">Pedir información</a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator">Descripción del proyecto<i class="material-icons right">close</i></span>
+                                <p>blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla </p>
                             </div>
                         </div>
-
-                </main>
-            </section>
-        </div>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="img/proyecto01.png" alt="">
+                            </div>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="" alt="" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <h3 id="nombre-proyecto">Nombre del proyecto</h3>
+                                <div class="elemento">
+                                    <h4>Categoria: </h4><span id="categoria">
+                                        Hardware
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Autor: </h4><span id="autor">
+                                        Jose Lopez
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Costo: </h4><span id="costo">
+                                        $1,500.50
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Puntuacion: </h4><span id="puntuacion">
+                                        5 stars
+                                    </span>
+                                </div>
+                                <span class="card-title activator">
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p><a href="#">Detalles del proyecto</a></p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Comprar</a>
+                                <a href="#">Pedir información</a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator">Descripción del proyecto<i class="material-icons right">close</i></span>
+                                <p>blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="img/proyecto01.png" alt="">
+                            </div>
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="" alt="" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <h3 id="nombre-proyecto">Nombre del proyecto</h3>
+                                <div class="elemento">
+                                    <h4>Categoria: </h4><span id="categoria">
+                                        Hardware
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Autor: </h4><span id="autor">
+                                        Jose Lopez
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Costo: </h4><span id="costo">
+                                        $1,500.50
+                                    </span>
+                                </div>
+                                <div class="elemento">
+                                    <h4>Puntuacion: </h4><span id="puntuacion">
+                                        5 stars
+                                    </span>
+                                </div>
+                                <span class="card-title activator">
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p><a href="#">Detalles del proyecto</a></p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Comprar</a>
+                                <a href="#">Pedir información</a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title activator">Descripción del proyecto<i class="material-icons right">close</i></span>
+                                <p>blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla blablablabla </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
     </div>
     <!--Renglon Footer-->
     <footer class="page-footer red darken-4 valign-wrapper center">
