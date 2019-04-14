@@ -1,6 +1,6 @@
 <?php
 //title
-$tituloPagina = "Asesosrias - Principal";
+$tituloPagina = "Asesorias - Principal";
 require_once("includes/header.php");
 ?>
 
