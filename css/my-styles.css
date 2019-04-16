@@ -310,7 +310,7 @@ aside .row{
 /*Fin del Contenido Principal*/
 /*Fin Archivo index.php*/
 
-/*Preloader*/
+/*Preloader en el index.php*/
 .preloader-background {
 	display: flex;
 	align-items: center;
@@ -337,3 +337,8 @@ aside .row{
 @keyframes blinker {  
   50% { opacity: 0; }
 }
+
+/*Posicion del el boton flotante
+#back-to-top {
+  bottom: 90px;
+}*/

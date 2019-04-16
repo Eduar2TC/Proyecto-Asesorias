@@ -209,11 +209,16 @@ require_once("includes/header.php");
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, totam aperiam praesentium debitis unde voluptates aut commodi iure vitae voluptas exercitationem soluta repudiandae ab voluptatem error laudantium facilis, dolore eveniet?Minus veritatis repellendus debitis accusantium ratione consequatur, beatae, dolorem corrupti quae perspiciatis sint delectus culpa maiores! Soluta quibusdam assumenda commodi id ut illum architecto harum possimus repellat! Fugiat, perspiciatis odio.</p>
                     </div>
                 </main>
+                <!--Back to top page-->
+                <div class="fixed-action-btn">
+                    <a id="back-to-top" class="btn-floating btn-large yellow accent-4 scale-transition">
+                        <i class="large material-icons">keyboard_arrow_up</i>
+                    </a>
+                </div>
             </section>
         </section>
     </div>
-
-    <!--Preloader-inde.php-->
+    <!--Preloader-index.php-->
     <div class="preloader-background">
         <div class="preloader-wrapper big active">
             <div class="spinner-layer spinner-blue">
@@ -266,6 +271,7 @@ require_once("includes/header.php");
         </div>
         <p class="blinking">Cargando</p>
     </div>
+
 
     <!--Renglon Footer-->
     <footer class="page-footer red darken-4 valign-wrapper center">

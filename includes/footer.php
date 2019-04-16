@@ -1,4 +1,3 @@
-
 <script src="<?php echo $path_js; ?>materialize.min.js"></script>
 <script src="<?php echo $path_js; ?>/jquery-3.3.1.min.js"></script>
 <script>
@@ -62,6 +61,29 @@
             .delay(1100)
             .fadeOut();
     });
+    /*Back to top */
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+            backToTop = function() {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('#back-to-top').removeClass('scale-out');
+                } else {
+                    $('#back-to-top').addClass('scale-out');
+                }
+            };
+        backToTop();
+        $(window).on('scroll', function() {
+            backToTop();
+        });
+
+        $('#back-to-top').on('click', function(e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 700);
+        });
+    }
 </script>
 
 </html>
