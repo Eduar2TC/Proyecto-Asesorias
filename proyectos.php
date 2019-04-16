@@ -1,6 +1,9 @@
 <?php
 //title
-$tituloPagina = "Asesosrias - Principal";
+$tituloPagina = "Asesorias - Proyectos";
+$path_logo = "img/";
+$path_css = "css/";
+$path_js = "js/";
 require_once("includes/header.php");
 ?>
 
@@ -12,7 +15,7 @@ require_once("includes/header.php");
                 <div class="row">
                     <a href="index.php">
                         <div class="col s3">
-                            <img src="img/logo-02.png" alt="logo-principal" id="logo-img">
+                            <img src="<?php echo $path_logo; ?>logo-02.png" alt="logo-principal" id="logo-img">
                         </div>
                         <div class="col s9">
                             <div class="row">
@@ -82,7 +85,7 @@ require_once("includes/header.php");
                             <ul class="hide-on-small-and-down">
                                 <li><a href="index.php" class="fuente-menu">Inicio</a></li>
                                 <li><a href="proyectos.php" class="fuente-menu">Proyectos</a></li>
-                                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span id="boton-registro">Registrarse</span></a>
+                                <li><a href="server/signup.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span id="boton-registro">Registrarse</span></a>
                                 </li>
                                 <li><a href="ayuda.php" class="fuente-menu">Ayuda</a></li>
                             </ul>
@@ -99,8 +102,8 @@ require_once("includes/header.php");
         <div class="row" id="navegacion-menu-movil">
             <ul class="sidenav" id="mobile-menu">
                 <li><a href="index.php" class="blue-text">Inicio</a></li>
-                <li><a href="registro.php" class="blue-text">Proyectos</a></li>
-                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
+                <li><a href="proyectos.php" class="blue-text">Proyectos</a></li>
+                <li><a href="signup.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
                 <li><a href="ayuda.php" class="blue-text">Ayuda</a></li>
             </ul>
         </div>

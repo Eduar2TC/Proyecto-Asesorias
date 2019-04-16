@@ -72,4 +72,29 @@ class Proyecto{
         $this->puntuacion = $puntuacion;
         $this->imagen = $imagen;
     }
+    public function convertImageToBase64(){
+        $path = 'myfolder/myimage.png';
+        $type = pathinfo($path, PATHINFO_EXTENSION);
+        $data = file_get_contents($path);
+        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);        
+    }
+    public function insertNewProyecto(){
+        $conexionInstance = new Conexion();
+        $conexion = $conexionInstance->conectarBD();
+        $query = " INSERT INTO `proyecto`(
+                               `nombre`,
+                               `categoria`,
+                               `costo`,
+                               `descripcion`,
+                               `puntuacion`,
+                               `imagen`
+                    ) VALUES(
+                        '$this->nombre',
+                        '$this->categoria',
+                        '$this->costo',
+                        '$this->descripcion',
+                        '$this->puntuacion',
+                        '$this->imagen'
+                    )";
+    }
 }

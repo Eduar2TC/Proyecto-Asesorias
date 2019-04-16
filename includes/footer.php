@@ -1,5 +1,5 @@
-<script src="js/materialize.min.js"></script>
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="<?php echo $path_js; ?>materialize.min.js"></script>
+<script src="<?php echo $path_js; ?>/jquery-3.3.1.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
 
@@ -32,6 +32,11 @@
             }, 200);
         });
 
+        //evento : ya tengo cuenta :v
+        $("#ya-tengo-cuenta").click(function() {
+            $("#usuario").focus();
+        });
+
 
     });
 
@@ -46,6 +51,11 @@
         //Scrollspy del menu lateral
         var scrollspy = document.querySelectorAll('.scrollspy');
         var instances = M.ScrollSpy.init(scrollspy);
+        //Inicializa el selector del formulario de registro de proyectos
+        var select = document.querySelectorAll('select');
+        var instances1 = M.FormSelect.init(select);
+
+
     });
 </script>
 

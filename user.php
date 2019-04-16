@@ -1,6 +1,10 @@
 <?php
 //title
 $tituloPagina = "Asesorias - Principal";
+$path_logo = "img/";
+$path_css = "css/";
+$path_js = "js/";
+$status_page = "user";
 require_once("includes/header.php");
 ?>
 
@@ -12,7 +16,7 @@ require_once("includes/header.php");
                 <div class="row">
                     <a href="index.php">
                         <div class="col s3">
-                            <img src="img/logo-02.png" alt="logo-principal" id="logo-img">
+                            <img src="<?php echo $path_logo; ?>logo-02.png" alt="logo-principal" id="logo-img">
                         </div>
                         <div class="col s9">
                             <div class="row">
@@ -86,7 +90,7 @@ require_once("includes/header.php");
                 <div class="row">
                     <!--Pushpin section-->
                     <div id="navegation-scroll" class="pushpin">
-                        
+
 
                     </div>
                 </div>
@@ -97,6 +101,7 @@ require_once("includes/header.php");
             <section>
                 <!--Users and Proyects rank section-->
                 <main id="main-index">
+
 
 
                 </main>
