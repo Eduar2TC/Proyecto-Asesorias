@@ -1,3 +1,4 @@
+
 <script src="<?php echo $path_js; ?>materialize.min.js"></script>
 <script src="<?php echo $path_js; ?>/jquery-3.3.1.min.js"></script>
 <script>
@@ -54,8 +55,12 @@
         //Inicializa el selector del formulario de registro de proyectos
         var select = document.querySelectorAll('select');
         var instances1 = M.FormSelect.init(select);
+        /*Preloader animacion */
+        $('.preloader-background').delay(1100).fadeOut('slow');
 
-
+        $('.preloader-wrapper')
+            .delay(1100)
+            .fadeOut();
     });
 </script>
 
