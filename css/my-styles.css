@@ -7,9 +7,28 @@
   max-width: 1280px;
   width: 90%;
 }
+
+@media only screen and (max-width:600px){
+    #contenedor.container {
+    width: 85%;
+  }
+  #titulo-pagina{
+    position: relative;
+    top: -30px;
+  }
+  #navegation-scroll{
+    right: 80%!important;
+  }
+}
 @media only screen and (min-width: 601px) {
   #contenedor.container {
     width: 85%;
+  }
+}
+@media (max-width:800px){
+  .table-of-contents a{
+    margin-left: 0% !important;
+    font-size: 15px !important;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -17,6 +36,7 @@
     width: 70%;
   }
 }
+
 
 /*Propiedades del Header*/
 /*Hover sobre el titulo principal*/
@@ -220,7 +240,12 @@ aside .row{
 
   /*Cambia erl height de las cajas de texto*/
   .section-cajas .caja{
-    height: 200px;
+    height: 260px;
+    padding: 15px 5px;
+    overflow: hidden;
+  }
+  .section-cajas .caja h5{
+    padding-bottom: 5px;
   }
 
 /*InicioTitulon*/
@@ -308,7 +333,6 @@ aside .row{
   color: #3F51B5;
 }
 /*Fin del Contenido Principal*/
-/*Fin Archivo index.php*/
 
 /*Preloader en el index.php*/
 .preloader-background {
@@ -342,3 +366,6 @@ aside .row{
 #back-to-top {
   bottom: 90px;
 }*/
+
+/*Fin Archivo index.php*/
+

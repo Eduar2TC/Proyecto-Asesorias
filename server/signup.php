@@ -115,9 +115,8 @@ require_once("../includes/header.php");
         <div class="col s12 z-depth-6 card-panel">
             <form class="login-form">
                 <div class="row">
-                    <div class="col s12">
+                    <div class="col s12 blue">
                         <h5 class="center">Datos Personales</h5>
-                        <div class="divider"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -163,9 +162,8 @@ require_once("../includes/header.php");
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12">
+                    <div class="col s12 blue">
                         <h5 class="center">Datos de Acceso</h5>
-                        <div class="divider"></div>
                     </div>
                 </div>
                 <div class="row">

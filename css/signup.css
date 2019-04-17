@@ -12,7 +12,7 @@ body {
     background: rgb(60, 83, 131);
 }
 
-#login-page {
+#login-page {  /*!!!!Cambiar ancho en vista movil y el titulo del header*/
    width: 500px;
 }
 #login-page .row{ /*Espacio entre los elementos de registro*/

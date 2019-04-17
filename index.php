@@ -161,19 +161,23 @@ require_once("includes/header.php");
                     <div class="section-cajas scrollspy center" id="cajas-texto">
                         <div class="row">
                             <div class="col s12 m6 l3 blue white-text caja">
+                                <i class="material-icons medium">announcement</i>
                                 <h5>¡Hooo si!</h5>
                                 <p>Aprueba tu curso con estas gran idea</p>
                             </div>
                             <div class="col s12 m6 l3 purple white-text caja">
+                                <i class="material-icons medium">attach_money</i>
                                 <h5>Vende tus proyectos</h5>
                                 <p>¿Piensas que tu dinero se há perdido? Que esperas vender tus proyectos. </p>
                             </div>
                             <div class="col s12 m6 l3 teal white-text caja">
+                                <i class="material-icons medium">directions</i>
                                 <h5>Asesorias Personalizadas</h5>
                                 <p>Tengo dugas ¿Que hago?</p>
                                 <p>Contacta y programa la cita con los autores para resolver tus dudas.</p>
                             </div>
                             <div class="col s12 m6 l3 orange white-text caja">
+                                <i class="material-icons medium">beenhere</i>
                                 <h5>Facilidades de pago</h5>
                                 <p>Opciones a comveniencia, Oxxo, Paypal</p>
                                 <p>Si lo deseas contacta al autor para poder acordar la forma de pago.</p>
