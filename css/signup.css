@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 }
 html {
     display: table;
@@ -12,9 +13,16 @@ body {
     background: rgb(60, 83, 131);
 }
 
-#login-page {  /*!!!!Cambiar ancho en vista movil y el titulo del header*/
+@media (max-width: 601px) { 
+    /*Resize form on mobil view*/
+    #login-page{
+        width: 90%!important;
+    }
+}
+#login-page {  
    width: 500px;
 }
+
 #login-page .row{ /*Espacio entre los elementos de registro*/
     margin-bottom: 5px;
 }

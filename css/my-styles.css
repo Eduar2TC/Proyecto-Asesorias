@@ -25,6 +25,7 @@
     width: 85%;
   }
 }
+/*Fix position pushpin*/
 @media (max-width:800px){
   .table-of-contents a{
     margin-left: 0% !important;
@@ -368,4 +369,3 @@ aside .row{
 }*/
 
 /*Fin Archivo index.php*/
-
