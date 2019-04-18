@@ -43,3 +43,9 @@ body {
 h5{
     font-family: 'Boogaloo', cursive;
 }
+
+/*Validation of data*/
+.validation_error{
+    position: relative;
+    left: 43px !important;
+}

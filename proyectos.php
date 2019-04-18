@@ -1,6 +1,6 @@
 <?php
 //title
-$tituloPagina = "Asesorias - Proyectos";
+$tituloPagina = "Proyectos Asesorias - Proyectos";
 $path_logo = "img/";
 $path_css = "css/";
 $path_js = "js/";

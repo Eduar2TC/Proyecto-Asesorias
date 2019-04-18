@@ -1,11 +1,12 @@
 <?php
 //title
-$tituloPagina = "Asesorias - Registro";
+$tituloPagina = "Proyectos Asesorias - Registro";
 $path_logo = "../img/";
 $path_css = "../css/";
 $path_js = "../js/";
 $status_page = "signup";
 require_once("../includes/header.php");
+require_once("insert-users.php");
 ?>
 
 <body>
@@ -113,7 +114,7 @@ require_once("../includes/header.php");
     <!--Formulario de registro-->
     <div class="row" id="login-page">
         <div class="col s12 z-depth-6 card-panel">
-            <form class="login-form">
+            <form class="login-form" action="insert-users.php" method="POST" id="formulario-registro">
                 <div class="row">
                     <div class="col s12 blue">
                         <h5 class="center">Datos Personales</h5>
@@ -122,41 +123,41 @@ require_once("../includes/header.php");
                 <div class="row">
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">account_circle</i>
-                        <input class="validate" id="nombre" type="text">
+                        <input class="validate" id="nombre" name="nombre-alumno" type="text" validate="name">
                         <label for="nombre" data-error="wrong" data-success="right">Nombre</label>
                     </div>
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">phone</i>
-                        <input class="validate" id="telefono" type="text">
+                        <input class="validate" id="telefono" name="telefono" type="text" validate="phone">
                         <label for="telefono" data-error="wrong" data-success="right">Telefono</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">text_format</i>
-                        <input class="validate" id="paterno" type="text">
+                        <input class="validate" id="paterno" name="paterno" type="text" validate="max-min-length">
                         <label for="paterno" data-error="wrong" data-success="right">Paterno</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">text_format</i>
-                        <input class="validate" id="materno" type="text">
+                        <input class="validate" id="materno" name="materno" type="text" validate="max-min-length">
                         <label for="materno" data-error="wrong" data-success="right">Materno</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">format_list_numbered</i>
-                        <input class="validate" id="matricula" type="text">
+                        <input class="validate" id="matricula" name="matricula" type="text" validate="matricula">
                         <label for="matricula" data-error="wrong" data-success="right">Matricula</label>
                     </div>
                     <div class="input-field col s12 m6 l6">
-                        <select>
+                        <select name="id-carrera" class="validate">
                             <option value="" disabled selected>Selecciona una Categoria</option>
-                            <option value="LCC">LCC</option>
-                            <option value="ICC">ICC</option>
-                            <option value="ITI">ITI</option>
+                            <option value="1">LCC</option>
+                            <option value="2">ICC</option>
+                            <option value="3">ITI</option>
                         </select>
                         <label>Carrera a la que perteneces</label>
                     </div>
@@ -169,26 +170,26 @@ require_once("../includes/header.php");
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">person_add</i>
-                        <input class="validate" id="usuario-reg" type="text">
+                        <input class="validate" id="usuario-reg" name="usuario" type="text" type="text" validate="max-min-length">
                         <label for="usuario-reg" data-error="wrong" data-success="right">Usuario</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">mail_outline</i>
-                        <input class="validate" id="email-reg" type="email">
+                        <input class="validate" id="email-reg" name="email" type="email" validate="email">
                         <label for="email-reg" data-error="wrong" data-success="right">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">lock_outline</i>
-                        <input id="password-reg" type="password">
+                        <input id="password-reg" name="password" type="password" class="must_match" validate="contrasenia">
                         <label for="password-reg">Contraseña</label>
                     </div>
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">lock_outline</i>
-                        <input id="re-password-reg" type="password">
+                        <input id="re-password-reg" type="password" validate="match:.must_match">
                         <label for="re-password-reg">Confirmar contraseña</label>
                     </div>
                 </div>
@@ -196,16 +197,22 @@ require_once("../includes/header.php");
                     <div class="col s12 m12 l12  login-text">
                         <p>
                             <label>
-                                <input type="checkbox" class="blue" id="acepto-terminos" />
+                                <input type="checkbox" class="blue" id="acepto-terminos" name="acepto-terminos" value="Si" required />
                                 <span id="acepto-terminos">Acepto los terminos</span>
                             </label>
                         </p>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="g-recaptcha" data-sitekey="<?php echo (new HumanRobot)->getPublicKey(); ?>" data-callback="recaptchaCallback"></div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <a href="register.html" class="btn blue waves-effect waves-light col s12">Registrarse</a>
+                        <button type="submit" id="submitButton" class="btn blue waves-effect waves-light col s12" disabled>
+                            Registrarse
+                        </button>
                     </div>
                     <div class="input-field col s12">
                         <p class="margin center medium-small sign-up">Ya tengo cuenta <a href="#login.php" id="ya-tengo-cuenta">Login</a></p>
