@@ -11,10 +11,13 @@
         var instance = new M.Sidenav(elem);
         var elems = document.querySelectorAll('.collapsible');
         var instances = M.Collapsible.init(elems);
+        //evita dezplazarse al inicio cada que se da click sobre el collapsible
         $(".collapsible-header").click(function(e) {
             e.preventDefault();
         });
 
+        var elems1 = document.querySelectorAll('.materialboxed');
+        var instances = M.Materialbox.init(elems1);
 
     });
     $('document').ready(function() {
@@ -173,7 +176,7 @@
                                 type: 'error',
                                 title: 'Oops...',
                                 text: 'Algo ha pasado: ' + respuesta,
-                                footer: '<a href>Alguna sugerencia?</a>'
+                                footer: '<a href>¿Alguna sugerencia?</a>'
                             });
                         }
                     }
