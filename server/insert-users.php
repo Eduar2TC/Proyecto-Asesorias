@@ -147,10 +147,10 @@ class Main{
                 $this->usuario = new Usuario($_POST['email'], $_POST['usuario'], $_POST['password'], $this->alumno);
                 
                 if( $this->alumno->InsertarDatos() == true && $this->usuario->InsertarDatos() == true){
-                    echo "Datos del nuevo usuario agregado exitosamente!";
+                    echo "Datos del nuevo usuario agregado exitosamente";
                 }
                 else{
-                    echo "Error al intentar agregar nuevo usuario!";
+                    echo "Error al intentar agregar nuevo usuario";
                 }
             }
             else if(!( $_POST['acepto-terminos'] == 'Si') && !((new HumanRobot)->responseRecaptcha($_POST['g-recaptcha-response']) == '1')){
