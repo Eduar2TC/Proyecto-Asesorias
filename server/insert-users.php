@@ -78,9 +78,14 @@ class Usuario{
         $hash = password_hash($password, PASSWORD_BCRYPT, ['cost' => 10]);
         return $hash;
     }
-    public function InsertarDatos(){
+    public function createConectionDb()
+    {
         $conection_instance = new Conexion;
         $conexion = $conection_instance->conectarBD();
+        return $conexion;
+    }
+    public function InsertarDatos(){
+        $conexion = $this->createConectionDb();
         $query = "INSERT INTO `usuario`(
                                         `email`,
                                         `user`, 
@@ -134,8 +139,8 @@ class Main{
     private $usuario;
 
     public function main(){
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
             if($_POST['acepto-terminos'] == 'Si' && (new HumanRobot)->responseRecaptcha($_POST['g-recaptcha-response']) == '1'){
 
                 $this->alumno = new Alumno($_POST['matricula'], $_POST['nombre-alumno'], $_POST['paterno'], $_POST['materno'], $_POST['telefono'], $_POST['id-carrera']);
@@ -148,7 +153,7 @@ class Main{
                     echo "Error al intentar agregar nuevo usuario!";
                 }
             }
-            else{
+            else if(!( $_POST['acepto-terminos'] == 'Si') && !((new HumanRobot)->responseRecaptcha($_POST['g-recaptcha-response']) == '1')){
                 echo "No es posible el registro; no aceptaste los terminos. Y no rellenaste el capcha!";
             }
             
@@ -156,7 +161,5 @@ class Main{
     }
 }
 //Fisrt generate data from login after insert data of alumno
-//$principal = new Main();
-//$principal->main();
-echo $_POST['acepto-terminos'];
-echo(new HumanRobot)->responseRecaptcha($_POST['g-recaptcha-response']);
+$principal = new Main();
+$principal->main();
