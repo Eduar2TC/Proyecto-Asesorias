@@ -368,4 +368,14 @@ aside .row{
   bottom: 90px;
 }*/
 
+/*+++Estilos de para la validacion de acceso del usuario+++*/
+form .validation_error{
+  display: none !important;
+}
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 2%;
+  left:3%;  
+}
 /*Fin Archivo index.php*/

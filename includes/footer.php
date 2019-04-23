@@ -23,6 +23,14 @@
     $('document').ready(function() {
         /*  Aqui inicializar los elemetos jquery u funciones cuando la página esté cargada*/
 
+        /*Evita enviar datos de acceso al presionar enter */
+        $(window).keydown(function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+            }
+        });
+
         //Cambia el tmaño dinamicamente del sidenav al tamaño visible del contenido principal al hacer Scroll
         $(window).on('scroll', function() {
             var $el = $('#main-proyects'),
@@ -36,6 +44,14 @@
             $('#sidenav-1').stop().animate({
                 height: visibleBottom - visibleTop
             }, 200);
+            /*Evita enviar datos de acceso al presionar enter */
+            $(window).keydown(function(event) {
+                if (event.keyCode == 13) {
+                    console.log("caca");
+                    event.preventDefault();
+                    return false;
+                }
+            });
         });
 
         //evento : ya tengo cuenta :v
@@ -149,6 +165,28 @@
 
             // adjust margins on the validation error messages
             override_input_margins: true,
+
+            onValidateInput: function(validation_info) {
+                var tagError = validation_info.input;
+                var tagErrorToString = tagError.outerHTML;
+
+                var mensajeError = validation_info.error_message;
+                if (mensajeError.length > 0) {
+                    if (tagErrorToString.indexOf('email') !== -1) {
+                        M.toast({
+                            html: 'Error : ' + mensajeError,
+                            inDuration: 300,
+                            classes: 'rounded'
+                        });
+                    } else if (tagErrorToString.indexOf('password') !== -1) {
+                        M.toast({
+                            html: 'Error : ' + mensajeError,
+                            inDuration: 300,
+                            classes: 'rounded'
+                        });
+                    }
+                }
+            }
         });
 
         //send ajax
