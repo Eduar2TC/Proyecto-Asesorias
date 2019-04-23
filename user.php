@@ -6,6 +6,7 @@ $path_css = "css/";
 $path_js = "js/";
 $status_page = "user";
 require_once("includes/header.php");
+session_start();
 ?>
 
 <body>
@@ -39,7 +40,7 @@ require_once("includes/header.php");
                 </div>
                 <div class="row no-margin">
                     <div class="col s12 right-align">
-                        <h5 class="no-margin">Bienvenido: <span class="usuario-name">Juan de la Madrid Perez</span></h5>
+                        <h5 class="no-margin">Bienvenido: <span class="usuario-name"><?php echo $_SESSION['user']; ?></span></h5>
                     </div>
                 </div>
             </div>

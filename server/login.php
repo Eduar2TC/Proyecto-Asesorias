@@ -54,8 +54,8 @@ class Main{
     }
 
     public function main(){
-        //recibe los datos de acceso
-        $conexion = $this->creaConexionBd();
+        //Funcion que recibe los datos de acceso
+        $conexion = $this->creaConexionBd(); // creacion de la conexion a la bd
         if( !empty($_POST)){
 
             if(isset($_POST['login'])){
@@ -65,10 +65,14 @@ class Main{
                 $newUser = new Login($user, $password);
                 
                 if($newUser->searchUser($user, $password) == true){
-                    echo "encontrado";
+                    echo "Bienvenido :v";
+                    session_start();
+                    $_SESSION['login'] = 'success';
+                    $_SESSION['user'] = $user;
+                    header('Refresh:2 ; url=../user.php');
                 }
                 else{
-                    echo "no encontrado";
+                    echo "usuario o contraseña inválida";
                 }
 
             }
