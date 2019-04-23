@@ -369,7 +369,7 @@ aside .row{
 }*/
 
 /*+++Estilos de para la validacion de acceso del usuario+++*/
-form .validation_error{
+#form-login .validation_error{
   display: none !important;
 }
 #toast-container {

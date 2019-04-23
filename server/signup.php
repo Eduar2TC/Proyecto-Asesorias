@@ -114,7 +114,7 @@ require_once("insert-users.php");
     <!--Formulario de registro-->
     <div class="row" id="login-page">
         <div class="col s12 z-depth-6 card-panel">
-            <form class="login-form" action="insert-users.php" method="POST" id="formulario-registro">
+            <form action="insert-users.php" method="POST" id="formulario-registro">
                 <div class="row">
                     <div class="col s12 blue">
                         <h5 class="center">Datos Personales</h5>

@@ -60,7 +60,7 @@
         });
 
         //validacion del formulario
-        $('form').validin({
+        $('#formulario-registro, #form-login').validin({
             validation_tests: {
                 'alpha': {
                     'regex': /[a-zA-Z]*/,
