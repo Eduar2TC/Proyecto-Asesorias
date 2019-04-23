@@ -38,16 +38,16 @@ require_once("insert-users.php");
             <!--Form login-->
             <div class="col m4 hide-on-med-and-down">
                 <div class="row delete-margin-row-botton">
-                    <form class="col s12" action="server/login.php" method="POST">
+                    <form class="col s12" action="login.php" method="POST" id="form-login">
                         <div class="row delete-margin-row-botton" id="cajas">
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input type="email" name="usuario" id="usuario" class="validate" placeholder="mail@gmail.com" id="email">
+                                <input type="email" name="usuario" class="validate" placeholder="mail@gmail.com" id="email" required>
                                 <label for="user">Usuario</label>
                             </div>
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">lock_open</i>
-                                <input type="password" name="contrasenia" class="validate" id="password">
+                                <input type="password" name="contrasenia" class="validate" id="password" required>
                                 <label for="password">Contraseña</label>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ require_once("insert-users.php");
                                 </p>
                             </div>
                             <div class="col s4 m3 l3 offset-s2" id="button-access">
-                                <button class="btn waves-effect waves-light btn-small blue right" type="submit" name="action">Acceder
+                                <button type="submit" name="login" value="accesando" class="btn waves-effect waves-light btn-small blue right">Acceder
                                     <i class="fas fa-sign-in-alt"></i>
                                 </button>
                             </div>
@@ -170,7 +170,7 @@ require_once("insert-users.php");
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">person_add</i>
-                        <input class="validate" id="usuario-reg" name="usuario" type="text" type="text" validate="max-min-length">
+                        <input class="validate" id="usuario-reg" name="usuario" type="text" type="text" validate="username">
                         <label for="usuario-reg" data-error="wrong" data-success="right">Usuario</label>
                     </div>
                 </div>

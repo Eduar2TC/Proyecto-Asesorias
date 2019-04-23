@@ -26,8 +26,8 @@ class Login{
         $query = "SELECT * FROM `usuario` WHERE `email` = '$this->user'";
         if ($result = $conection->query($query)) {
             $fila = $result->fetch_assoc();
+            //name encontrado and password correct
             if($result->num_rows == 1 && password_verify($password, $fila['password'])){
-                echo $fila['password'];
                 $conection->close();
                 return true;
             }

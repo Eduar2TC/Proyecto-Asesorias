@@ -91,7 +91,7 @@
                     'error_message': "This needs to be a valid number"
                 },
                 'name': {
-                    'regex': /[A-Z\.\-'\s]*/i,
+                    'regex': /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/,
                     'error_message': "Ingresa un nombre válido"
                 },
                 'email': {
@@ -139,9 +139,13 @@
                     'error_message': "Las contraseñas no coinciden"
                 },
                 'max-min-length': {
-                    'regex': /^[a-zA-Z]{5,25}$/,
-                    'error_message': "ingresa un nombre mayor a 5 y menor a 25 caracteres"
+                    'regex': /^[a-zA-Z]{2,25}$/,
+                    'error_message': "ingresa un nombre mayor a 2 y menor a 25 caracteres"
 
+                },
+                'username': {
+                    'regex': /^(?=.{4,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/,
+                    'error_message': "Ingresa un usuario minimo 4 carácteres"
                 },
                 'matricula': {
                     'regex': /^\d{9,9}$/,
@@ -159,7 +163,7 @@
             error_message_class: "validation_error",
 
             // default error messages
-            form_error_message: "Please fix any errors in the form",
+            form_error_message: "Por favor corrige los errores en el formulario",
             required_fields_initial_error_message: "Por favor llena todos los campos requeridos",
             required_field_error_message: "Este campo es requerido",
 
