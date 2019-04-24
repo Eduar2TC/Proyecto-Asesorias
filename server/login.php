@@ -69,7 +69,7 @@ class Main{
                     session_start();
                     $_SESSION['login'] = 'success';
                     $_SESSION['user'] = $user;
-                    header('Refresh:2 ; url=../user.php');
+                    header('Refresh:2 ; url=user/user.php');
                 }
                 else{
                     echo "usuario o contraseña inválida";

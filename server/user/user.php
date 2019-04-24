@@ -1,11 +1,11 @@
 <?php
 //title
 $tituloPagina = "Asesorias - Principal";
-$path_logo = "img/";
-$path_css = "css/";
-$path_js = "js/";
+$path_logo = "../../img/";
+$path_css = "../../css/";
+$path_js = "../../js/";
 $status_page = "user";
-require_once("includes/header.php");
+require_once("../../includes/header.php");
 session_start();
 ?>
 
@@ -58,11 +58,11 @@ session_start();
 
                             <a href="index.php" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                             <ul class="hide-on-small-and-down">
-                                <li><a href="index.php" class="fuente-menu">Inicio</a></li>
-                                <li><a href="proyectos.php" class="fuente-menu">Mis Proyectos</a></li>
-                                <li><a href="registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span id="boton-registro">Salir</span></a>
+                                <li><a href="../../index.php" class="fuente-menu">Inicio</a></li>
+                                <li><a href="../../proyectos.php" class="fuente-menu">Mis Proyectos</a></li>
+                                <li><a href="#" class="blue-text waves-effect waves-red grey darken-4 btn"><span id="boton-registro">Salir</span></a>
                                 </li>
-                                <li><a href="ayuda.php" class="fuente-menu">Ayuda</a></li>
+                                <li><a href="../../ayuda.php" class="fuente-menu">Ayuda</a></li>
                             </ul>
                             <ul class="hide-on-small-and-down">
 
@@ -76,10 +76,10 @@ session_start();
 
         <div class="row" id="navegacion-menu-movil">
             <ul class="sidenav" id="mobile-menu">
-                <li><a href="index.php" class="blue-text">Inicio</a></li>
-                <li><a href="registro.php" class="blue-text">Proyectos</a></li>
-                <li><a href="#registro.php" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Registrarse</span></a>
-                <li><a href="ayuda.php" class="blue-text">Ayuda</a></li>
+                <li><a href="../../index.php" class="blue-text">Inicio</a></li>
+                <li><a href="#" class="blue-text">Proyectos</a></li>
+                <li><a href="#" class="blue-text waves-effect waves-red grey darken-4 btn"><span>Salir</span></a>
+                <li><a href="../../ayuda.php" class="blue-text">Ayuda</a></li>
             </ul>
         </div>
     </div>
@@ -117,4 +117,4 @@ session_start();
     </footer>
 </body>
 
-<?php require_once("includes/footer.php"); ?>
+<?php require_once("../../<includes/footer.php"); ?>
