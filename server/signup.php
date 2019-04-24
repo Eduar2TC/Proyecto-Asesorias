@@ -6,7 +6,7 @@ $path_css = "../css/";
 $path_js = "../js/";
 $status_page = "signup";
 require_once("../includes/header.php");
-require_once("insert-users.php");
+require_once("operations/insert-users.php");
 ?>
 
 <body>
