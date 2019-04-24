@@ -36,7 +36,7 @@ require_once("includes/header.php");
             <!--Form login-->
             <div class="col m4 hide-on-med-and-down">
                 <div class="row delete-margin-row-botton">
-                    <form class="col s12" action="server/login.php" method="POST" id="form-login">
+                    <form class="col s12" action="server/operations/login.php" method="POST" id="form-login">
                         <div class="row delete-margin-row-botton" id="cajas">
                             <div class="input-field col s6">
                                 <i class="material-icons prefix">account_circle</i>
