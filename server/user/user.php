@@ -15,7 +15,7 @@ session_start();
             <!--Logo-->
             <div class="col m4 s12">
                 <div class="row">
-                    <a href="index.php">
+                    <a href="../../index.php">
                         <div class="col s3">
                             <img src="<?php echo $path_logo; ?>logo-02.png" alt="logo-principal" id="logo-img">
                         </div>
@@ -117,4 +117,4 @@ session_start();
     </footer>
 </body>
 
-<?php require_once("../../<includes/footer.php"); ?>
+<?php require_once("../../includes/footer.php"); ?>
