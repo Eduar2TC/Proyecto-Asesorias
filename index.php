@@ -56,7 +56,7 @@ require_once("includes/header.php");
                             <div class="col s3 m3 l3 offset-m4">
                                 <p id="parrafo-checkbox">
                                     <label>
-                                        <input type="checkbox" class="blue" id="recuerdame" />
+                                        <input type="checkbox" class="blue" id="recuerdame" required/>
                                         <span id="span-recuerdame">recordarme</span>
                                     </label>
                                 </p>

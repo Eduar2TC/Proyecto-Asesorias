@@ -18,8 +18,12 @@
 
         var elems1 = document.querySelectorAll('.materialboxed');
         var instances = M.Materialbox.init(elems1);
+        //navbar usuarios
+        var elems2 = document.querySelectorAll('.sidenav2');
+        var instances = M.Sidenav.init(elems2);
 
     });
+
     $('document').ready(function() {
         /*  Aqui inicializar los elemetos jquery u funciones cuando la página esté cargada*/
 
@@ -33,7 +37,7 @@
 
         //Cambia el tmaño dinamicamente del sidenav al tamaño visible del contenido principal al hacer Scroll
         $(window).on('scroll', function() {
-            var $el = $('#main-proyects'),
+            var $el = $('#main-proyects, #main-user'),
                 scrollTop = $(this).scrollTop(),
                 scrollBot = scrollTop + $(this).height(),
                 elTop = $el.offset().top,
@@ -41,13 +45,12 @@
                 visibleTop = elTop < scrollTop ? scrollTop : elTop,
                 visibleBottom = elBottom > scrollBot ? scrollBot : elBottom;
             //Envia el tamaño obtenido al sidenav
-            $('#sidenav-1').stop().animate({
+            $('#sidenav-1, #sidenav-2').stop().animate({
                 height: visibleBottom - visibleTop
             }, 200);
             /*Evita enviar datos de acceso al presionar enter */
             $(window).keydown(function(event) {
                 if (event.keyCode == 13) {
-                    console.log("caca");
                     event.preventDefault();
                     return false;
                 }
@@ -232,6 +235,7 @@
             // to prevent refreshing the whole page page
             return false;
         });
+
 
     });
     //habilities button submit "Necesary outside after load principal page"

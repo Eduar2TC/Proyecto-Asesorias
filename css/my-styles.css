@@ -191,14 +191,21 @@ h1{
       margin-bottom: 0%;
   }
   /*Inicio Sidenav*/
-  /*Sidenav fijo*/
+  /*Sidenav fijo proyectos*/
   #sidenav-1, #navegation-scroll{
       /*top: 215px;*/
       /*z-index: 1; Manda el elemento hacia el fondo*/
       position: absolute;
       height: 83.80%;
       width: 24%;
-
+  }
+    /*Sidenav fijo usuario<----*/
+  #sidenav-2, #navegation-scroll{
+      /*top: 215px;*/
+      /*z-index: 1; Manda el elemento hacia el fondo*/
+      position: absolute;
+      height: 83.80%;
+      width: 24%;
   }
   /*Tamaño de los titulos del Scrollspy*/
   .table-of-contents a{
