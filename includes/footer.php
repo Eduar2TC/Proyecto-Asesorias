@@ -21,7 +21,6 @@
         //navbar usuarios
         var elems2 = document.querySelectorAll('.sidenav2');
         var instances = M.Sidenav.init(elems2);
-
     });
 
     $('document').ready(function() {
