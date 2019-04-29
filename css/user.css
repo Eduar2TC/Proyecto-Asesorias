@@ -1,15 +1,16 @@
-/*No margin*/
-.no-margin{
-    margin: 0%;
-}
-.usuario-name{
-    font-family: 'Boogaloo', cursive;
-}
-
 
 
 @media only screen and (max-width : 992px) {
 	header, main, footer {
 		padding-left: 0;
 	}
+}
+
+#navegacion-menu .container{
+	width: 80%;
+}
+
+/*Margen derecho de los Iconos en sidenav*/
+.material-icons{
+	margin-right: 15px !important;
 }

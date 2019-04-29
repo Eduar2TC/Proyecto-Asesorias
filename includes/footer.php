@@ -19,7 +19,7 @@
         var elems1 = document.querySelectorAll('.materialboxed');
         var instances = M.Materialbox.init(elems1);
         //navbar usuarios
-        var elems2 = document.querySelectorAll('.sidenav2');
+        var elems2 = document.querySelectorAll('#sidenav2');
         var instances = M.Sidenav.init(elems2);
     });
 
